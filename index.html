@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <div class="input-container">
+        <input type="text" id="task" placeholder="Add a task">
+        <input type="date" id="task-date">
+        <input type="time" id="task-time">
+        <select id="task-priority">
+            <option value="casual">Casual</option>
+            <option value="important">Important</option>
+        </select>
+        <button id="add">Add</button>
+    </div>
+
+    <div>
+        <h2>Important Tasks</h2>
+        <table id="important-tasks">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Task</th>
+                    <th>Priority</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="important-task-list"></tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Casual Tasks</h2>
+        <table id="casual-tasks">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Task</th>
+                    <th>Priority</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="casual-task-list"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
